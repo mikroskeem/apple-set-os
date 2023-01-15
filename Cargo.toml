@@ -1,0 +1,13 @@
+cargo-features = ["per-package-target"]
+
+[package]
+name = "apple-set-os"
+version = "0.1.0"
+edition = "2021"
+
+default-target = "x86_64-unknown-uefi"
+
+[dependencies]
+log = "0.4"
+uefi = { version = "0.18", features = ["exts"] }
+uefi-services = "0.15"
